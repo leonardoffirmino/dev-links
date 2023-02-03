@@ -61,6 +61,13 @@ body *{
 
 
 /*Switch Button*/
+#switch{
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto;
+}
+
 
 #switch button{
   width: 32px;
@@ -68,6 +75,26 @@ body *{
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+
+#switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+
+  background: var(--surface-color);
+  border:  1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+
 }
 
 /*Links*/
